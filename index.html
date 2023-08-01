@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(148, 148, 240);
+      font-size: 1.04rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 80px 0;
+    }
+
+    .firstsection>div {
+      width: 30%;
+    }
+
+    .leftsection {
+      font-size: 2rem;
+    }
+
+    .leftsection .btn {
+      padding: 5px;
+      background-color: rgb(31, 34, 109);
+      color: white;
+      border: 2px solid white;
+      border-radius: 3px;
+      font-size: 14px;
+      cursor: pointer;
+
+    }
+
+    .rightsection {
+      /* background-color: red; */
+      width: 50%;
+    }
+
+    .rightsection img {
+      /* background-color: red; */
+      width: 80%;
+      /* margin: 50px 0; */
+    }
+
+    .purple {
+      color: rgb(170, 107, 228);
+    }
+
+    #element {
+      color: rgb(170, 107, 228);
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+
+    main hr {
+      border: 0;
+      background-color: rgb(125, 125, 180);
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    .secondsection h1 {
+      font-size: 1.9rem;
+    }
+
+    .text-grey {
+      color: gray;
+    }
+
+    .secondsection .box {
+      /* background-color: white; */
+      /* width: 80vw; */
+      /* height: 2px; */
+      /* margin: 56px 0; */
+      /* display: fl  ex; */
+    }
+
+    /* .secondsection .vertical {
+      /* height: 93px; */
+    /* width: 1px; */
+    /* background-color: white; */
+    /* margin: 0 100px; */
+    }
+
+    */ .top-img {
+      width: 36px;
+      position: relative;
+      top: -24px;
+      left: -16px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 55px;
+      width: 190px;
+
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 85px;
+      color: gray;
+      /* width: 150px; */
+      font-size: 15px;
+    }
+
+    footer {
+      background-color: rgb(40, 40, 68);
+      /* height: 200px; */
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 123px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 123px;
+    }
+
+    .footer-text-center {
+      color: grey;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    @media screen and (max-width: 700px) {
+      body {
+        /* background-color: red; */
+      }
+
+      .firstsection {
+        flex-direction: column-reverse;
+      }
+
+      footer {
+        display: none;
+      }
+
+      .box {
+        flex-direction: column;
+      }
+
+      .secondsection .vertical {
+        height: unset;
+      }
+
+      .vertical-title,
+      .vertical-desc {
+        left: 45px;
+      }
+
+      .secondsection .box {
+        width: 50vw;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      .leftsection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Jayshree's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        <div> Hi, My name is <span class="purple">Jayshree</span></div>
+        <div>and I am a passionate</div>
+
+        <span id="element"></span>
+        <div>
+       <a href="">  <button class="btn">Download Resume</button></a>
+          <button class="btn">Github</button>
+        </div>
+      </div>
+
+      <div class="rightsection">
+        <img src="bg.png.png" />
+      </div>
+    </section>
+    <hr />
+    <section class="secondsection">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Work Experince</h1>
+      <div class="box">
+
+
+
+        <div class="vertical">
+          <!-- <img class="top-img" src="dev.png.png" /> -->
+          <div class="vertical-title">React JS DEVELOPER <p>(nov-july 2023)</p>
+          </div>
+          <div class="vertical-desc">
+
+
+            <h3>ByteBillion India pvt. ltd Indore, Madhya Pradesh</h3>
+            11/2022 - Present
+            <ul>
+              <li>Major contribution in end-to-end product designs.</li>
+              <li>Identify and mitigate design issues and risks.</li>
+              <li>Review code for projects, ensuring high quality.</li>
+              <li>Develop complex user interfaces and web apps using React.JS.</li>
+              <li>Seamless integration of frontend with backend (Node.JS).</li>
+              <li>Design, build, and maintain high-performance, reusable code with JavaScript.</li>
+              <li>Stay updated with latest trends in JavaScript, React.JS, and Node.JS.</li>
+              <li>Share knowledge to drive innovation and improve software development practices.</li>
+            </ul>
+          </div>
+
+    </section>
+    <hr />
+  </main>
+  <section class="secondsection">
+    <h1>Projects</h1>
+    <div class="vertical-title">Karocode </div>
+    <div class="vertical-desc">
+
+      <ul>
+        <li>Karo code is an educational web platform similar to W3Schools.</li>
+        <li>Core technologies include JavaScript, React, Node.js, and MongoDB.</li>
+        <li>Offers tutorials, examples, and interactive coding exercises for learners.</li>
+        <li>Utilizes React to provide a user-friendly and responsive interface.</li>
+        <li>Backend powered by Node.js and MongoDB efficiently handles user interactions and progress tracking..</li>
+        <li>Personalized learning journey for users. Aims to empower coding enthusiasts to master programming concepts
+          and languages through an engaging online learning environment.</li>
+
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="vertical-title">NEWSAPP</div>
+    <div class="vertical-desc">
+
+      <ul>
+        <li>Modern web application with a frontend built using React, offering an interactive and user-friendly
+          interface.
+        </li>
+        <li>Backend powered by Node.js with the Express.js framework, efficiently handling server-side operations.
+        </li>
+        <li>Utilizes MongoDB, a NoSQL database, to manage data storage for news articles and related information.
+        </li>
+        <li>Utilizes React to provide a user-friendly and responsive interface.</li>
+        <li>Provides a reliable platform for users to access the latest news and stay up-to-date with current events.
+        </li>
+
+
+      </ul>
+    </div>
+  </section>
+
+
+  </main>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h1>jayshree's developer</h1>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-text-center">jayshresportfolio.com | All rightreserved</div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
